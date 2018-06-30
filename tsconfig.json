@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "my-share-lib": [
+        "dist/my-share-lib"
+      ],
+      "my-share-lib/*": [
+        "dist/my-share-lib/*"
+      ]
+    }
   }
 }
