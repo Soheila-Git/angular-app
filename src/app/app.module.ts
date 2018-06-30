@@ -5,13 +5,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyDashComponent } from './my-dash/my-dash.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
-import { WizardComponent } from 'projects/my-share-lib/src/lib/wizard/wizard.component';
+import { MyShareLibModule } from 'projects/my-share-lib/src/public_api';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyDashComponent,
-    WizardComponent
+    MyDashComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +19,8 @@ import { WizardComponent } from 'projects/my-share-lib/src/lib/wizard/wizard.com
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MyShareLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
